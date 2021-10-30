@@ -1,6 +1,6 @@
 {
   "name": "snachejs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A minimalist, intuitive javascript base notification library",
   "main": ".lib/js/snache.js",
   "directories": {

@@ -6,8 +6,7 @@
 .snackbar {
   visibility: hidden; 
   width: 300px;
-  min-width: 400px; 
-  /* margin-left: -125px;  */
+  min-width: 350px; 
   margin: 0px auto;
   background-color: #333; 
   color: #fff; 
@@ -16,20 +15,20 @@
   padding: 5px; 
   position: fixed; 
   z-index: 1; 
-  left: 50%; 
-  transform: translateX(-50%);
-  /* right: 50%; */
+  left: 0; 
+  right: 0;
   bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: flex-start; 
+  flex-wrap: wrap;
   font-family: 'Poppins', sans-serif;
 }
 
 .snackbar .left{
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 80%;
 }
 
 .snackbar .right{
@@ -37,7 +36,7 @@
     padding: 10px;
     align-items: flex-end;
     justify-content: flex-end;
-    width: 30%;
+    width: 10%;
 }
 
 .snackbar .btn{
@@ -89,18 +88,8 @@
   }
 }
 
-/* @-webkit-keyframes fadeout {
-  from {
-    bottom: 30px;
-    opacity: 1;
-  }
-  to {
-    bottom: 0;
-    opacity: 0;
-  }
-} */
 
-/* @keyframes fadeout {
+@-webkit-keyframes fadeout {
   from {
     bottom: 30px;
     opacity: 1;
@@ -109,4 +98,15 @@
     bottom: 0;
     opacity: 0;
   }
-} */
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
