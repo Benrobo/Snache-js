@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snache-js Demo</title>
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/snachejs@1.0.2/lib/css/snache.css"
+    />
+    <link rel="stylesheet" href="./css/hightlight.css" />
+    <link rel="stylesheet" href="./css/demo.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark">
+      <div class="left">
+        <h5>Snache-js</h5>
+      </div>
+      <div class="righ">
+        <a href="https://github.com/Benrobo/Snache-js" class="btn btn-success"
+          >Github</a
+        >
+      </div>
+    </nav>
+
+    <header class="header">
+      <div class="ovl">
+        <img src="../lib/img/logo.png" alt="" />
+        <h4>
+          🎉 A minimalist , intuitive javascript based notification toast
+          library.
+        </h4>
+      </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="section container">
+      <div class="head">
+        <h3>Lets see what it does...</h3>
+        <p>Here are basic examples of <strong>Snackbar</strong> in action.</p>
+      </div>
+
+      <p>Inittialize Snache-js</p>
+
+      <pre>
+        <code class="language-js">
+          let snackbar = new SnackBar({
+            snackbarText: "Something went wrong"
+          })
+          
+          snackbar.init()
+        </code>
+      </pre>
+
+      <br />
+      <div class="actions-container">
+        <div class="box">
+          <div class="left">
+            <button class="btn btn-primary btn-default">
+              Show Default Snache
+            </button>
+          </div>
+          <div class="right">
+            <pre>
+              <code class="language-js">
+                let snackbar = new SnackBar({
+                  snackbarText: "Something went wrong"
+                })
+                
+                snackbar.init()
+              </code>
+            </pre>
+          </div>
+        </div>
+        <br />
+        <!-- snackbar with icon -->
+        <div class="box">
+          <div class="left">
+            <button class="btn btn-primary btn-showicon">
+              Snackbar with icon
+            </button>
+          </div>
+          <div class="right">
+            <pre>
+              <code class="language-js">
+                snackbar = new SnackBar({
+                  showIcon: true,
+                  iconName: "bug"
+                  visibility: true,
+                  snackbarText: "Something went wrong"
+                })
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- snackbar with icon and button -->
+        <div class="box">
+          <div class="left">
+            <button class="btn btn-primary btn-icon-action-button">
+              Snackbar (icon + button)
+            </button>
+          </div>
+          <div class="right">
+            <pre>
+              <code class="language-javascript">
+                snackbar = new SnackBar({
+                  showIcon: true,
+                  iconName: "bug",
+                  visibility: true,
+                  snackbarText: "Something went wrong",
+                  visibility: true,
+                  snackbarText: "Something went wrong",
+                  actionText: "cancel",
+                  action: true,
+                  handler: () => {
+                      snackbar.hide()
+                  }
+                })
+                snackbar.show()
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- change default snackbar background -->
+        <div class="box">
+          <div class="left">
+            <button class="btn btn-primary btn-changebg">
+              Snackbar Change Bg
+            </button>
+          </div>
+          <div class="right">
+            <pre>
+              <code class="language-javascript">
+                snackbar = new SnackBar({
+                  showIcon: true,
+                  iconName: "bug",
+                  visibility: true,
+                  snackbarBg: "red",
+                  snackbarText: "Something went wrong",
+                  visibility: true,
+                  actionText: "cancel",
+                  action: true,
+                  handler: () => {
+                      snackbar.hide()
+                  }
+                })
+                snackbar.show()
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <script src="https://unpkg.com/snachejs@1.0.2/lib/js/snache.js"></script> -->
+    <script src="js/hightlight.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="../lib/js/snache.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

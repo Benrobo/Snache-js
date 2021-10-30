@@ -37,6 +37,7 @@ let snackbar = new SnackBar({
   iconName: `<string>` //Snache-js uses fontawesome icons by default,just provide the fontawesome-icon names,
   snackbarText: `<String>`, //The Snache-js text,
   snackbarTextColor: `<String>` // the color of the snackbar text,
+  snackbarBg: `<String | color names>` //change the snackbar background,
   iconColor: `<String>`, //snackbar icon color (red, #0000, rgb(0,255,0)),
   visibility: `<boolean>`, //true | false, this would hide the Snache-js element when turned true,
   actionText: `<String>`, //the action element inner text for eg Button,
