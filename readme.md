@@ -10,8 +10,8 @@
 Installing Snackbrr is as easy as...
 
 ```html
-<script type="text/javascript" src="snackbar.js"></script>
-<link rel="stylesheet" type="text/css" href="snackbar.css" />
+<script type="text/javascript" src="https://unpkg.com/snachejs@1.0.2/lib/js/snache.js"></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/snachejs@1.0.2/lib/css/snache.css" />
 ```
 
 ### 💎 Initializing Snackbrr

@@ -1,8 +1,8 @@
 {
-  "name": "snache-js",
-  "version": "1.0.0",
+  "name": "snachejs",
+  "version": "1.0.2",
   "description": "A minimalist, intuitive javascript base notification library",
-  "main": "index.js",
+  "main": ".lib/js/snache.js",
   "directories": {
     "lib": "lib"
   },
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Benrobo/SnackBrr.git"
+    "url": "git+https://github.com/Benrobo/Snache-js.git"
   },
   "keywords": [
     "javascript",
@@ -22,7 +22,7 @@
   "author": "benrobo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Benrobo/SnackBrr/issues"
+    "url": "https://github.com/Benrobo/Snache-js/issues"
   },
-  "homepage": "https://github.com/Benrobo/SnackBrr#readme"
+  "homepage": "https://github.com/Benrobo/Snache-js#readme"
 }
