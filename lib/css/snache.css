@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap');
+
+@import url("./icon-css/all.css");
+@import url("./bootstrap.css");
+
+.snackbar {
+  visibility: hidden; 
+  width: 300px;
+  min-width: 400px; 
+  /* margin-left: -125px;  */
+  margin: 0px auto;
+  background-color: #333; 
+  color: #fff; 
+  text-align: center; 
+  border-radius: 2px; 
+  padding: 5px; 
+  position: fixed; 
+  z-index: 1; 
+  left: 20%; 
+  right: 50%;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  font-family: 'Poppins', sans-serif;
+}
+
+.snackbar .left{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.snackbar .right{
+    display: flex;
+    padding: 10px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.snackbar .btn{
+    font-size: 12px;
+    background: none;
+    color:#ccc;
+}
+
+
+.snackbar .icon{
+    padding: 10px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.snackbar.show {
+  visibility: visible; 
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.snackbar.hide {
+  visibility: hidden; 
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+/* @-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+} */
+
+/* @keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+} */
