@@ -10,8 +10,8 @@
 Installing Snackbrr is as easy as...
 
 ```html
-<script type="text/javascript" src="https://unpkg.com/snachejs@1.0.3/lib/js/snache.js"></script>
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/snachejs@1.0.3/lib/css/snache.css" />
+<script type="text/javascript" src="https://unpkg.com/snachejs@1.0.6/lib/js/snache.js"></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/snachejs@1.0.6/lib/css/snache.css" />
 ```
 
 ### 💎 Initializing Snackbrr
@@ -52,3 +52,5 @@ snackbar.show();
 ```
 
 ❤ And that it, Snache-js is ready to be used.
+
+<a href="https://snache.netlify.app/demo/demo.html">Live Demo </a>
